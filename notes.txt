@@ -1,1 +1,7 @@
 1. Not able to understand the Theme concept and what's the ThemeProvider, have to check out later.
+
+2. Theme is not created on style/banner/index.js, so it's won't work for mobile. Need to work on that.
+
+3. Slide not working properly, showing only the last item.
+
+4. Shop button color not working properly.

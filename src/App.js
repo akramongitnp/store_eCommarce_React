@@ -1,8 +1,11 @@
 import { ThemeProvider } from '@mui/system'
-import { Button, Container } from '@mui/material'
+import { Container, Typography, Box } from '@mui/material'
 import { useEffect } from 'react';
 import theme from './styles/theme'
 import Appbar from './components/appBar';
+import Banner from './components/banner';
+import Promotions from './components/promotions';
+import Products from './components/products';
 
 function App() {
   useEffect(() => {
@@ -10,12 +13,17 @@ function App() {
   }, []);
   return (
     <ThemeProvider theme={theme}>
-    <Appbar /> 
     <Container
       maxWidth='xl'
       sx={{background: '#fff'}}
       >
-      <Button variant='contained'>Try Me!</Button>
+      <Appbar />
+      <Banner />
+      <Promotions />
+      <Box display='flex' justifyContent={'center'} sx={{p:4}}>
+        <Typography variant="h4">Our Products</Typography>
+      </Box>
+      <Products />
     </Container>
     </ThemeProvider>
   );
