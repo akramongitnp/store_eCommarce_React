@@ -16,7 +16,7 @@ export default function Banner() {
                 <BannerDescription variant="subtitle">
                     The full passage of standard Lorem Ipsum copy is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </BannerDescription>
-                <BannerShopButton color='primary'>Shop Now</BannerShopButton>
+                <BannerShopButton color="primary">Shop Now</BannerShopButton>
             </BannerContent>
         </BannerConatainer>
     )

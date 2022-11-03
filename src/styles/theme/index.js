@@ -48,7 +48,7 @@ const theme = createTheme({
     MyShopButton: {
         styleOverrides: {
           root: {
-            color: Colors.white,
+            color: Colors.black,
           },
           primary: {
             background: Colors.primary,
