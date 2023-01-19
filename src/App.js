@@ -7,6 +7,9 @@ import Banner from './components/banner';
 import Promotions from './components/promotions';
 import Products from './components/products';
 import Footer from './components/footer';
+import AppDrawer from './components/drawer';
+import { UIProvider } from './context/ui';
+import Search from './components/search';
 
 function App() {
   useEffect(() => {
@@ -18,14 +21,18 @@ function App() {
       maxWidth='xl'
       sx={{background: '#fff'}}
       >
-      <Appbar />
-      <Banner />
-      <Promotions />
-      <Box display='flex' justifyContent={'center'} sx={{p:4}}>
-        <Typography variant="h4">Our Products</Typography>
-      </Box>
-      <Products />
-      <Footer />
+      <UIProvider>
+        <Appbar />
+        <Banner />
+        <Promotions />
+        <Box display='flex' justifyContent={'center'} sx={{p:4}}>
+          <Typography variant="h4">Our Products</Typography>
+        </Box>
+        <Products />
+        <Footer />
+        <AppDrawer />
+        <Search />
+      </UIProvider>
     </Container>
     </ThemeProvider>
   );

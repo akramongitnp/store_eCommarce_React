@@ -1,7 +1,8 @@
 import { styled } from "@mui/material/styles";
-import { List, Typography } from "@mui/material";
+import { IconButton, List, Typography } from "@mui/material";
 import { Box } from "@mui/system"
 import { Colors } from "../theme";
+import { position } from "polished";
 
 //Container.
 export const AppbarConatiner = styled(Box)(() => ({
@@ -48,3 +49,9 @@ export const ActionItemContainerMobile = styled(Box)(() => ({
     borderTop: `1px solid' ${Colors.border}`
 }))
 
+export const DrawerCloseButton = styled(IconButton)(() => ({
+    position: 'absolute',
+    top: 10,
+    left: 250,
+    zIndex: 1999
+}))

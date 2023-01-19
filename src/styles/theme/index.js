@@ -43,6 +43,16 @@ const theme = createTheme({
                 disableRipple: true,
                 disableElevation: true
             }
+        },
+        MuiDrawer: {
+          styleOverrides: {
+            paper: {
+              width: 250,
+              background: Colors.primary,
+              color: Colors.secondary,
+              borderRadius: '0px 100px 0px 0px',
+            }
+          }
         }
     },
     MyShopButton: {
